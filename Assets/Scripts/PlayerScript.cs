@@ -52,29 +52,7 @@ public class PlayerScript : MonoBehaviourPunCallbacks, IPunObservable
         {
             if (Player.GetPhotonView().ViewID == photonViewId && Player.GetPhotonView().IsMine)
             {
-                Debug.Log("[ PlayerScripts ] Spawn : " + photonViewId);
                 Weapon weapon = PhotonNetwork.Instantiate(weaponPrefab.name, Vector3.zero, Quaternion.identity).GetComponent<Weapon>();
-            }
-        }
-    }
-
-    public void SetParentWeapon()
-    {
-        if (!PhotonNetwork.LocalPlayer.IsLocal)
-            return;
-
-        string owenerName = "";
-        foreach (GameObject Player in GameObject.FindGameObjectsWithTag("Player"))
-        {
-            owenerName = Player.GetPhotonView().Owner.NickName;
-            foreach (GameObject Weapon in GameObject.FindGameObjectsWithTag("Weapon"))
-            {
-                Debug.Log("Parent is : " + Weapon.transform.parent == null);
-                if (Weapon.transform.parent == null)
-                {
-                    Debug.Log("Parent is null");
-                    Weapon.transform.parent = Player.transform;
-                }
             }
         }
     }

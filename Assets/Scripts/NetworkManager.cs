@@ -146,7 +146,6 @@ public class NetworkManager : MonoBehaviourPunCallbacks
     public void TestClick()
     {
         PlayerScript Player = FindPlayer();
-        Debug.Log("[ NetworkManager ] TestClick Call & ViewID : " + Player.photonView.ViewID);
         Player.AddWeapon(Player.photonView.ViewID);
     }
 }
