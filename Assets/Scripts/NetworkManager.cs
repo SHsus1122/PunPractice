@@ -15,7 +15,8 @@ public class NetworkManager : MonoBehaviourPunCallbacks
     [Header("RoomPanel")]
     public GameObject RoomPanel;
     public Text ValueText, PlayersText, ClickUpgradeText, AutoUpgradeText, ValuePerClickText, ValuePerSecondText;
-    public Button ClickUpgradeBtn, AutoUpgradeBtn;
+    public Button ClickUpgradeBtn, AutoUpgradeBtn, TestBtn;
+    public List<GameObject> PlayerList = new List<GameObject>();
 
     float nextTime;
 
@@ -46,6 +47,7 @@ public class NetworkManager : MonoBehaviourPunCallbacks
     {
         ShowPanel(RoomPanel);
         PhotonNetwork.Instantiate("Player", Vector3.zero, Quaternion.identity);
+        
     }
 
     PlayerScript FindPlayer()
@@ -53,7 +55,9 @@ public class NetworkManager : MonoBehaviourPunCallbacks
         foreach (GameObject Player in GameObject.FindGameObjectsWithTag("Player"))
         {
             if (Player.GetPhotonView().IsMine)
+            {
                 return Player.GetComponent<PlayerScript>();
+            }
         }
         return null;
     }
@@ -135,5 +139,14 @@ public class NetworkManager : MonoBehaviourPunCallbacks
             nextTime = Time.time + 1;
             ValuePerSecond();
         }
+    }
+
+
+
+    public void TestClick()
+    {
+        PlayerScript Player = FindPlayer();
+        Debug.Log("[ NetworkManager ] TestClick Call & ViewID : " + Player.photonView.ViewID);
+        Player.AddWeapon(Player.photonView.ViewID);
     }
 }

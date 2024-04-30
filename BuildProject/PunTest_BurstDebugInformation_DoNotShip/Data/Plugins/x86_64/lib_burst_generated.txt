@@ -17,8 +17,8 @@ Library: D:\UnityProject\PunTest\Temp\BurstOutput\Data\Plugins\x86_64\lib_burst_
 --assembly-defines=Unity.VisualScripting.Flow;
 --assembly-defines=Unity.InternalAPIEngineBridge.001;
 --assembly-defines=Unity.2D.Common.Runtime;
---assembly-defines=Unity.Timeline;
 --assembly-defines=PhotonRealtime;
+--assembly-defines=Unity.Timeline;
 --assembly-defines=PhotonChat;
 --assembly-defines=PhotonUnityNetworking;
 --assembly-defines=Unity.Collections;
@@ -30,10 +30,10 @@ Library: D:\UnityProject\PunTest\Temp\BurstOutput\Data\Plugins\x86_64\lib_burst_
 --assembly-defines=Unity.TextMeshPro;
 --assembly-defines=Unity.VisualScripting.State;
 --assembly-defines=Unity.Collections.LowLevel.ILSupport;
---assembly-defines=Unity.VisualScripting.Antlr3.Runtime;
---assembly-defines=Unity.Burst.Unsafe;
---assembly-defines=Photon3Unity3D;
 --assembly-defines=websocket-sharp;
+--assembly-defines=Unity.VisualScripting.Antlr3.Runtime;
+--assembly-defines=Photon3Unity3D;
+--assembly-defines=Unity.Burst.Unsafe;
 --assembly-defines=System.Runtime;
 --assembly-defines=netstandard;
 --assembly-defines=Mono.Security;
@@ -114,8 +114,8 @@ Library: D:\UnityProject\PunTest\Temp\BurstOutput\Data\Plugins\x86_64\lib_burst_
 --assembly-defines=Unity.VisualScripting.Flow;
 --assembly-defines=Unity.InternalAPIEngineBridge.001;
 --assembly-defines=Unity.2D.Common.Runtime;
---assembly-defines=Unity.Timeline;
 --assembly-defines=PhotonRealtime;
+--assembly-defines=Unity.Timeline;
 --assembly-defines=PhotonChat;
 --assembly-defines=PhotonUnityNetworking;
 --assembly-defines=Unity.Collections;
@@ -127,10 +127,10 @@ Library: D:\UnityProject\PunTest\Temp\BurstOutput\Data\Plugins\x86_64\lib_burst_
 --assembly-defines=Unity.TextMeshPro;
 --assembly-defines=Unity.VisualScripting.State;
 --assembly-defines=Unity.Collections.LowLevel.ILSupport;
---assembly-defines=Unity.VisualScripting.Antlr3.Runtime;
---assembly-defines=Unity.Burst.Unsafe;
---assembly-defines=Photon3Unity3D;
 --assembly-defines=websocket-sharp;
+--assembly-defines=Unity.VisualScripting.Antlr3.Runtime;
+--assembly-defines=Photon3Unity3D;
+--assembly-defines=Unity.Burst.Unsafe;
 --assembly-defines=System.Runtime;
 --assembly-defines=netstandard;
 --assembly-defines=Mono.Security;

@@ -146,3 +146,5 @@ MonoBehaviour:
   valuePerSecond: 0
   AutoUpGradeCost: 10000
   AutoUpGradeAdd: 1
+  weaponPrefab: {fileID: 661682719679198908, guid: a472ddb266b39004c8201634bf562330, type: 3}
+  cnt: 0
