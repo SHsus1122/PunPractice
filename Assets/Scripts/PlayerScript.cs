@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class PlayerScript : MonoBehaviourPun, IPunObservable
 {
-    public int value;
+    public int value, valuePerClick, ClickUpGradeCost, ClickUpGradeAdd, valuePerSecond, AutoUpGradeCost, AutoUpGradeAdd;
     NetworkManager NM;
     PhotonView PV;
 

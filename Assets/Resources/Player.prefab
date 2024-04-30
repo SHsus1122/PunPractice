@@ -139,4 +139,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b3f729fe97a84c341aa5ea64e52c74b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  value: 0
+  value: 10001
+  valuePerClick: 2
+  ClickUpGradeCost: 10
+  ClickUpGradeAdd: 2
+  valuePerSecond: 0
+  AutoUpGradeCost: 10000
+  AutoUpGradeAdd: 1
